@@ -1,0 +1,49 @@
+/* Login Redirect Section */
+.login-redirect {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-out 0.9s both;
+}
+
+.login-redirect span {
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-top:-20%;
+}
+
+.login-btn:hover {
+  color: #764ba2;
+  transform: translateY(-1px);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .login-redirect {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .login-redirect span {
+    color: #ccc;
+  }
+  
+  .login-btn {
+    color: #f093fb;
+  }
+  
+  .login-btn:hover {
+    color: #f5576c;
+  }
+}

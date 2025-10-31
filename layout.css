@@ -1,0 +1,30 @@
+/* Main content */
+.main-content {
+  margin-left: 256px;
+  margin-top: 64px;
+  padding: 1.5rem;
+  transition: margin-left 0.3s ease-in-out;
+  min-height: calc(100vh - 64px);
+}
+
+.main-content-full {
+  margin-left: 0;
+  margin-top: 64px;
+  padding: 1.5rem;
+  min-height: calc(100vh - 64px);
+}
+
+/* Collapsed state */
+.sidebar.collapsed ~ .main-content {
+  margin-left: 70px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .main-content,
+  .main-content-full {
+    margin-left: 0;
+    padding: 1rem;
+    padding-top: 80px; /* Header + toggle */
+  }
+}
